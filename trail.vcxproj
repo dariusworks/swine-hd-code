@@ -1,0 +1,777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <PDBGenerated>True</PDBGenerated>
+    <ProjectGuid>{3BBE4F2B-3374-4344-89C6-1EC1B5FA26E6}</ProjectGuid>
+    <GeneratedFromPDBSource>W:\Games\steamapps\common\SWINE HD Remaster\swine.pdb</GeneratedFromPDBSource>
+    <PDBToolVersion>0.0</PDBToolVersion>
+    <PDBTimeStamp>20190526141035</PDBTimeStamp>
+    <eworkswine>F:\WORK\swinehd\swine</eworkswine>
+    <ework>F:\WORK\swinehd</ework>
+    <IncludePath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\VS\UnitTest\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include;$(eworkswine)\game;$(ework)\Swine\dxsdk\include;$(eworkswine)\RakNet\Include;$(eworkswine)\miniupnpc\Include;$(eworkswine)\steam\include;c:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\include;c:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Auxiliary\VS\include;$(ework)\RakNet-master\Source;$(ework)\RakNet-master\DependentExtensions\openssl-1.0.0d\include;$(ework)\RakNet-master\DependentExtensions;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Include\um</IncludePath>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalOptions> -c -diagnostics:classic -EHc -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_MBCS;_USING_V110_SDK71_;_VC80_UPGRADE=0x0600;_WIN32_DCOM;_WINDOWS;NDEBUG;STEAM;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile>e:\Work\Swine\game\Release\game.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ErrorReporting>Queue</ErrorReporting>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <OmitFramePointers>false</OmitFramePointers>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <BrowseInformation>false</BrowseInformation>
+      <EnablePREfast>false</EnablePREfast>
+      <UseFullPaths>true</UseFullPaths>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\BitStream.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\CCRakNetSlidingWindow.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\DR_SHA1.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\DS_ByteQueue.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\DS_HuffmanEncodingTree.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\FileList.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\FileListTransfer.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\FileOperations.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\GetTime.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\Itoa.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\LocklessTypes.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\NatPunchthroughClient.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\PluginInterface2.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\RakMemoryOverride.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\RakNetSocket2.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\RakNetTypes.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\RakPeer.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\RakSleep.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\RakString.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\RakThread.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\Rand.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\ReliabilityLayer.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\SignaledEvent.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\SimpleMutex.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\SocketLayer.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\StringCompressor.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\StringTable.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\SuperFastHash.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\TCPInterface.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(ework)\RakNet-master\Lib\LibStatic\..\..\Source\WSAStartupSingleton.cpp">
+      <_PDBSource>E:\Work\RakNet-master\Lib\RakNet_VS2008_LibStatic_Release_Win32.pdb</_PDBSource>
+      <AdditionalOptions> -c -diagnostics:classic -Zc:inline</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_MBCS;_RAKNET_LIB;_RELEASE;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile> </PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile> </PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExceptionHandling> </ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <StringPooling> </StringPooling>
+      <FunctionLevelLinking> </FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\core\core_pch.cpp">
+      <_PDBSource>e:\Work\Swine\core\Release STEAM\core.pdb</_PDBSource>
+      <PreprocessorDefinitions>_LIB;_MBCS;_USING_V110_SDK71_;NDEBUG;STEAM;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile>e:\Work\Swine\core\Release STEAM\core.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile>core_pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <SdlCheck>true</SdlCheck>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\core\Logger.cpp">
+      <_PDBSource>e:\Work\Swine\core\Release STEAM\core.pdb</_PDBSource>
+      <PreprocessorDefinitions>_LIB;_MBCS;_USING_V110_SDK71_;NDEBUG;STEAM;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile>e:\Work\Swine\core\Release STEAM\core.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile>core_pch.h</PrecompiledHeaderFile>
+      <SdlCheck>true</SdlCheck>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\core\Properties.cpp">
+      <_PDBSource>e:\Work\Swine\core\Release STEAM\core.pdb</_PDBSource>
+      <PreprocessorDefinitions>_LIB;_MBCS;_USING_V110_SDK71_;NDEBUG;STEAM;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile>e:\Work\Swine\core\Release STEAM\core.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile>core_pch.h</PrecompiledHeaderFile>
+      <SdlCheck>true</SdlCheck>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\core\Stream.cpp">
+      <_PDBSource>e:\Work\Swine\core\Release STEAM\core.pdb</_PDBSource>
+      <PreprocessorDefinitions>_LIB;_MBCS;_USING_V110_SDK71_;NDEBUG;STEAM;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile>e:\Work\Swine\core\Release STEAM\core.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile>core_pch.h</PrecompiledHeaderFile>
+      <SdlCheck>true</SdlCheck>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\core\Timer.cpp">
+      <_PDBSource>e:\Work\Swine\core\Release STEAM\core.pdb</_PDBSource>
+      <PreprocessorDefinitions>_LIB;_MBCS;_USING_V110_SDK71_;NDEBUG;STEAM;WIN32</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile>e:\Work\Swine\core\Release STEAM\core.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile>core_pch.h</PrecompiledHeaderFile>
+      <SdlCheck>true</SdlCheck>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\Board.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\effects.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\Gepard.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\glow.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\Group.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\Mesh.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\Parcel.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\particles.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\particles2.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\particles3.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\particles4.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\Spline.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\Terrain.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\3dengine\Texture.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\common\Options.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\common\SwineVersion.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\mdec\decode.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\mdec\huffman.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\mdec\hybrid.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\mdec\istream.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\mdec\layer3.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\mdec\subband.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\network\ConnectionManager.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\network\LanDiscovery.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\network\MatchMaking.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\network\Multi.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\network\UPnPGateway.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\platform\GogManager.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\platform\Platform.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\sound\Concert.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\Button.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\CheckBox.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\ColorButton.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\Credits.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\Dialog.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\DropList.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\DXWidget.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\DXWindow.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\EditBox.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\EditBoxWithText.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\FileListBox.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\InputDialog.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\Introduction.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\Label.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\ListBox.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\MatchListBox.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\MessageBox.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\MessageBoxWithoutButtons.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\PlayerListBox.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\RadioButton.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\SaveLoadListBox.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\Scaler.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\SkippableDXWidget.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\SliderH.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\SliderV.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\Splash.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\TextBox.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\TextButton.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\TipDialog.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\Widget.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\window\Window.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\world\Campaign.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\world\GameWorld.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\world\Projectile.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\world\Trigger.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\world\Unit.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\world\UnitStore.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\..\world\World.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\ChatRoomMenu.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\game.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\GameView.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\GroupIcon.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\InGameMenu.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\MainMenu.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\Market.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\Menu.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\MenuBackgroundView.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\Messages.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\Minimap.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\StatusPanel.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\StdAfx.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\SuperWindow.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\TitleRoom.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+    <ClCompile Include="$(eworkswine)\game\VideoView.cpp">
+      <_PDBSource>e:\Work\Swine\game\Release\vc141.pdb</_PDBSource>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

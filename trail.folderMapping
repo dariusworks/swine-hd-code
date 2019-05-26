@@ -1,0 +1,4 @@
+<List x:TypeArguments="mp:FolderMapping" Capacity="4" xmlns="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:mp="clr-namespace:Microsoft.PdbProject;assembly=PdbProjectEngine" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <mp:FolderMapping Action="Include" DestinationFolder="F:\WORK\swinehd\swine" MacroName="eworkswine" SourceFolder="e:\work\swine" />
+  <mp:FolderMapping Action="Include" DestinationFolder="F:\WORK\swinehd" MacroName="ework" SourceFolder="e:\work" />
+</List>
