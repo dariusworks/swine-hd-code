@@ -1,5 +1,4 @@
 SVersion * __thiscall SVersion::SVersion(SVersion *this)
-
 {
   this->MajorVersion = 1;
   this->MinorVersion = 6;
@@ -9,7 +8,6 @@ SVersion * __thiscall SVersion::SVersion(SVersion *this)
 
 
 SwineVersionType __thiscall SVersion::GetVersionTypeFromString(SVersion *this,char *param_1)
-
 {
   int version;
   
@@ -21,4 +19,14 @@ SwineVersionType __thiscall SVersion::GetVersionTypeFromString(SVersion *this,ch
     }
   }
   return Developer;
+}
+
+// multiplayer probably
+bool __thiscall SVersion::IsGoodVersion(SVersion *this,SVersion param_1) 
+{
+  if (((this->VersionType == param_1.VersionType) && (this->MajorVersion == param_1.MajorVersion))
+     && (this->MinorVersion == param_1.MinorVersion)) {
+    return true;
+  }
+  return false;
 }
